@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: rgb(251,160,63);
+background: linear-gradient(90deg, rgba(251,160,63,1) 0%, rgba(252,70,107,1) 100%);
+    font-family: Arial, sans-serif;
+}
+
+.game-board {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #111;
+    border: 2px solid #fff;
+    margin-top: 20px; /* Add margin to separate from the top of the page */
+}
+
+.snake, .food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lime;
+}
+
+.food {
+    background-color: rgb(255, 0, 0);
+}
+
+/* Top bar styling */
+.top-bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reset-btn:active {
+    background-color: #777;
+}
+
+#score {
+    font-size: 20px;
+    color: white;
+}
+
+/* Popup styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0dd176;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    color: rgb(0, 0, 0);
+}
+
+.popup button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:active {
+    background-color: #777;
+}
+
+/* Control buttons styling */
+.controls {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add margin to space from gameboard */
+}
+
+.controls button {
+    background-color: #ac0f0f;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:active {
+    background-color: #777;
+}
+
+.controls div {
+    display: flex;
+    justify-content: center;
+}
+/* Add this to your existing CSS */
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .game-board {
+        width: 300px;
+        height: 300px;
+    }
+
+    .snake, .food {
+        width: 15px;
+        height: 15px;
+    }
+
+    .top-bar {
+        padding: 0 10px;
+    }
+
+    #reset-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #score {
+        font-size: 16px;
+    }
+
+    .controls {
+        margin-top: 100px;
+    }
+
+    .controls button {
+        padding: 8px 16px;
+        margin: 4px;
+    }
+
+    .popup button {
+        margin: 8px;
+        padding: 8px 16px;
+        font-size: 14px;background-color: #111;
+    }
+    .popup {
+        position: fixed;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #10b470;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+}
+
+
+@media (min-width: 1024px) {
+    .game-board {
+        width: 550px;
+        height: 550px;
+        border-radius: 12px;
+    }
+
+    .snake, .food {
+        width: 25px;
+        height: 25px;
+    }
+
+    .controls {
+        margin-top: 30px;
+    }
+
+    .controls button {
+        padding: 12px 24px;
+        margin: 8px;
+    }
+
+    .popup button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    #reset-btn {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    #score {
+        font-size: 24px;
+    }
+}

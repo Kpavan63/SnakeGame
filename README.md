@@ -25,7 +25,7 @@ A classic Snake game implementation with a modern twist. This project features a
 To get started with this project, clone the repository and open it in your favorite code editor:
 
 ```bash
-git clone https://github.com/yourusername/snake-game.git
+git clone https://github.com/Kpavan63/snake-game.git
 cd snake-game
 ```
 

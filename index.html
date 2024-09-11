@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top bar containing reset button and score -->
+    <div class="top-bar">
+        <button id="reset-btn">Reset</button>
+        <div id="score">Score: 0</div>
+    </div>
+
+    <div class="game-board" id="game-board"></div>
+
+    <!-- Popup for difficulty selection -->
+    <div class="popup" id="popup">
+        <h2>Select Game Difficulty</h2>
+        <button id="easy-btn">Easy</button>
+        <button id="medium-btn">Medium</button>
+        <button id="hard-btn">Hard</button>
+    </div>
+
+    <!-- Popup for game over -->
+    <div class="popup" id="game-over-popup">
+        <h2>Game Over!</h2>
+        <p>Better luck next time!</p>
+        <button id="try-again-btn">Try Again</button>
+    </div>
+
+    <!-- Popup for welcome message -->
+    <div class="popup" id="welcome-popup">
+        <h2>Welcome to Snake Game!</h2>
+        <p>Use arrow keys or control buttons to move the snake.</p>
+        <button id="start-game-btn">Start Game</button>
+    </div>
+
+    <!-- Control buttons for mobile -->
+    <div class="controls">
+        <button id="up-btn">Up</button>
+        <div>
+            <button id="left-btn">Left</button>
+            <button id="right-btn">Right</button>
+        </div>
+        <button id="down-btn">Down</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
